@@ -1,0 +1,59 @@
+@import url("https://fonts.cdnfonts.com/css/nautilus-pompilius");
+
+.team h1 {
+  font-family: "Nautilus Pompilius", sans-serif;
+}
+
+.team {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/funfood/team_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .card-container-team {
+    width: 100%; /* Make sure the container takes full screen width */
+  }
+
+  .chef-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .chef-img {
+    width: 100%;
+  }
+
+  .chef-card img {
+    width: 100%;
+    height: 300px;
+    max-width: 280px;
+    object-fit: cover;
+  }
+
+  .about-chef {
+    width: 100%;
+    height: 40vh;
+  }
+
+  /* Reduce text size for better fit on small screens */
+  .chef-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .chef-card p {
+    font-size: 0.9rem;
+  }
+
+  .chef-media {
+    gap: 10px; /* Smaller gaps between social icons */
+  }
+}

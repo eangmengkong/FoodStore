@@ -1,0 +1,37 @@
+@import url("https://fonts.cdnfonts.com/css/nautilus-pompilius");
+
+.price h1 {
+  font-family: "Nautilus Pompilius", sans-serif;
+}
+
+.about-type h4 {
+  color: black;
+  padding: 10px 0;
+  background-color: white;
+}
+
+.about-type hr {
+  height: 0px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .price-para {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .about-price {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-price-container {
+    max-width: 350px;
+  }
+  .buttom {
+    max-width: 347px;
+  }
+  .purchaseBtn {
+    max-width: 300px;
+  }
+}

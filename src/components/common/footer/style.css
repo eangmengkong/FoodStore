@@ -1,0 +1,33 @@
+@import url("https://fonts.cdnfonts.com/css/nautilus-pompilius");
+
+.footer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.655), rgba(0, 0, 0, 0.655)),
+    url("images/funfood/footer_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+.footer-content h1 {
+  font-family: "Nautilus Pompilius", sans-serif;
+  color: #e75b1e;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    padding: 20px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #contactus {
+    max-width: 200px;
+  }
+}

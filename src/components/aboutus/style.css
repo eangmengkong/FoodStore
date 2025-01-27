@@ -1,0 +1,82 @@
+@import url("https://fonts.cdnfonts.com/css/nautilus-pompilius");
+
+.aboutus h1,
+.todayspecial h1 {
+  font-family: "Nautilus Pompilius", sans-serif;
+}
+
+.todayspecial {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/funfood/special_menu_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.slick-dots li button:before {
+  color: white !important; /* Changes the default dot color to white */
+  font-size: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.about-container {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    width: 380px;
+    margin: 0 auto;
+  }
+  .about-img {
+    margin-top: -70px;
+    display: flex;
+  }
+  .about-img img {
+    width: 180px;
+  }
+  .aboutus h1,
+  .aboutus h2 {
+    text-align: center;
+  }
+
+  .special-content {
+    width: 380px;
+    text-align: start;
+  }
+  .card-container {
+    margin-top: 20px;
+  }
+
+  .card {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .card img {
+    max-width: 190px;
+    height: 300px;
+    border-width: 2px;
+  }
+
+  .overlay {
+    max-width: 190px;
+  }
+  /* Adjust the text size inside the overlay */
+  .card .text-xl {
+    font-size: 1rem;
+  }
+}

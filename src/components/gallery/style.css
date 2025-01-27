@@ -1,0 +1,48 @@
+@import url("https://fonts.cdnfonts.com/css/nautilus-pompilius");
+
+.gallery h1 {
+  font-family: "Nautilus Pompilius", sans-serif;
+}
+
+/* Custom styles for overlay and modal */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(234, 118, 68, 0.6);
+  transition: 3s ease-in-out;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.group:hover .overlay {
+  transition: 3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+}
+
+.search-icon {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-para {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .group-img {
+    width: 400px;
+  }
+
+  .group img {
+    width: 240px;
+    height: 130px;
+  }
+  .overlay {
+  }
+}
