@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 ![image alt](https://github.com/eangmengkong/FoodStore/blob/8e561d5b791c103ce3cccca6ee360d59939242cc/foodstoreScreenshot.jpg)
 
 ## Live Demo 🌍  
-🔗 [food-store-tau-one.vercel.app](https://food-store-tau-one.vercel.app/)
+🔗 [food-store](https://food-store-eangmengkongs-projects.vercel.app/)
