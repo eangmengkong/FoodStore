@@ -3,6 +3,7 @@
 .aboutus h1,
 .todayspecial h1 {
   font-family: "Nautilus Pompilius", sans-serif;
+  letter-spacing: 1px;
 }
 
 .todayspecial {
@@ -12,71 +13,86 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
+  background-attachment: fixed;
 }
 
-.slick-dots li button:before {
-  color: white !important; /* Changes the default dot color to white */
-  font-size: 20px;
+.slick-slide {
+  padding: 0 10px;
 }
 
-.slick-dots li.slick-active button:before {
-  color: white !important;
+.slick-list {
+  margin: 0 -10px;
 }
 
 .slick-dots {
-  bottom: 20px;
+  bottom: 10px;
 }
 
-.about-container {
-  display: flex;
+.slick-dots li button:before {
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) {
-  .about-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-content {
-    width: 380px;
-    margin: 0 auto;
-  }
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 640px) {
   .about-img {
-    margin-top: -70px;
-    display: flex;
-  }
-  .about-img img {
-    width: 180px;
-  }
-  .aboutus h1,
-  .aboutus h2 {
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .special-content {
-    width: 380px;
-    text-align: start;
-  }
-  .card-container {
+  .about-img img:last-child {
     margin-top: 20px;
+    margin-left: 0;
   }
 
-  .card {
-    max-width: 300px;
-    height: auto;
+  .slick-slide {
+    padding: 0 5px;
   }
 
-  .card img {
-    max-width: 190px;
-    height: 300px;
-    border-width: 2px;
+  .slick-list {
+    margin: 0 -5px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .about-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .overlay {
-    max-width: 190px;
+  .about-img {
+    justify-content: center;
   }
-  /* Adjust the text size inside the overlay */
-  .card .text-xl {
-    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-header,
+.about-img {
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-img {
+  animation-delay: 0.3s;
 }

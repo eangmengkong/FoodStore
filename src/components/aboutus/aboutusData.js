@@ -6,12 +6,6 @@ const special = [
     info: "",
   },
   {
-    cover: "/images/main/sushi.png",
-    name: "Ranasonic 2022",
-    price: "$300",
-    info: "",
-  },
-  {
     cover: "/images/main/bt1.jpg",
     name: "Setgearr 2022",
     price: "$100",

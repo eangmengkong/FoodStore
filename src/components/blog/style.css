@@ -2,50 +2,52 @@
 
 .blog h1 {
   font-family: "Nautilus Pompilius", sans-serif;
+  letter-spacing: 1px;
 }
 
 .blog-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/funfood/blog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
+  background-attachment: fixed;
 }
 
-@media screen and (max-width: 768px) {
-  .blog-container {
-    max-width: 400px;
-    background-color: #e6e6e6;
-    margin: 0 auto;
-  }
+.blog-box {
+  transition: transform 0.3s ease;
+}
 
+.blog-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1077px) {
   .blog-box-container {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    max-width: 800px;
   }
 
   .blog-box {
-    max-width: 178px;
-    display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    padding: 10px;
-    gap: 10px;
+  }
+
+  .blog-img,
+  .blog-content {
+    width: 100% !important;
   }
 
   .blog-img {
-    flex: 0 0 150px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1078px) {
+  .blog-box {
+    height: 250px;
   }
 
-  .blog-img img {
-    width: 153px; /* Ensure the image takes up the full width of its container */
-  }
-
-  .blog-content {
-    max-width: 130px;
-    margin: 0 auto;
+  .blog-img {
+    min-height: 100%;
   }
 }

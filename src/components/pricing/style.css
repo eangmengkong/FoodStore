@@ -2,36 +2,62 @@
 
 .price h1 {
   font-family: "Nautilus Pompilius", sans-serif;
+  letter-spacing: 1px;
 }
 
-.about-type h4 {
-  color: black;
-  padding: 10px 0;
-  background-color: white;
+.price-container {
+  background-color: #e6e6e6;
 }
 
-.about-type hr {
-  height: 0px;
-  border: none;
-  border-top: 1px solid black;
+.about-price-container {
+  transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .price-para {
-    width: 300px;
-    margin: 0 auto;
-  }
-  .about-price {
-    display: flex;
-    flex-direction: column;
-  }
+.about-price-container:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 640px) {
   .about-price-container {
-    max-width: 350px;
+    max-width: 100%;
   }
-  .buttom {
-    max-width: 347px;
+
+  .price-para p {
+    text-align: center;
+    line-height: 1.5;
   }
-  .purchaseBtn {
-    max-width: 300px;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .about-price {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
+
+  .about-price-container {
+    max-width: 100%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-price-container {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.about-price-container:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.about-price-container:nth-child(3) {
+  animation-delay: 0.4s;
 }
